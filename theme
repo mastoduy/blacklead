@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<!-- Black Lead theme v1.0, by Themes Chest-->
+<html>
+    <head>
+        <title>{Title}{block:TagPage} &bull; Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} &bull; {PostSummary}{/block:PostSummary}
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}">
+        {/block:Description}
+        {block:IfBlogAutor}
+            <meta name="author" content="{text:Blog Author}">
+        {/block:IfBlogAutor}
+        <meta name="theme-color" content="{color:Theme Color Meta Tag}">
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="apple-touch-icon" href="{PortraitURL-128}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:IfNotFontTitle}
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+        {/block:IfNotFontTitle}
+        {block:IfFontTitle}
+            <link href="https://fonts.googleapis.com/css?family={text:Font Title}:400,400i,700" rel="stylesheet">
+        {/block:IfFontTitle}
+        {block:IfNotFontBody}
+            <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+        {/block:IfNotFontBody}
+        {block:IfFontBody}
+            <link href="https://fonts.googleapis.com/css?family={text:Font Body}:400,700" rel="stylesheet">
+        {/block:IfFontBody}
+        
+        {block:Hidden}
+            <!-- Text -->
+            <meta name="text:Blog Author" content="">
+            <meta name="text:Google Analytics ID" content="">
+            <meta name="text:Font Title" content="">
+            <meta name="text:Font Body" content="">
+            <meta name="text:About me" content="">
+            <meta name="text:Tweets Limit" content="4">
+            <meta name="text:Instagram Token" content="">
+            <meta name="text:Follow Instagram Message" content="Follow me on Instagram">
+            <meta name="text:Instagram Photos Limit" content="12">
+            <meta name="text:Flickr ID" content="">
+            <meta name="text:Follow Flickr Message" content="Follow me on Flickr">
+            <meta name="text:Flickr Photos Limit" content="12">
+            <meta name="text:Disqus Shortname" content="">
+            <meta name="text:Finished Posts Message" content="You've reached all posts">
+            <meta name="text:Main Header Dot Pattern Opacity" content="0.4">
+            <!-- Options -->
+            <meta name="if:Permalink Popup" content="1">
+            <meta name="if:Show Emblem Initial" content="1">
+            <meta name="if:Archive Link" content="1">
+            <meta name="if:Random Link" content="1">
+            <meta name="if:RSS Link" content="1">
+            <meta name="if:Exif Data" content="1">
+            <meta name="if:Latest Tweets" content="1">
+            <meta name="if:Share Button" content="1">
+            <meta name="if:Share Permalink" content="1">
+            <meta name="if:Share Facebook" content="1">
+            <meta name="if:Share Twitter" content="1">
+            <meta name="if:Share Pinterest" content="1">
+            <meta name="if:Share Google Plus" content="1">
+            <meta name="if:Submitter" content="1">
+            <meta name="if:Following" content="1">
+            <meta name="if:Likes" content="1">
+            <!-- Select -->
+            <meta name="select:Pagination Style" content="load-more" title="Load more">
+            <meta name="select:Pagination Style" content="infinite-scroll" title="Infinite scroll">
+            <meta name="select:Pagination Style" content="normal-pagination" title="Normal pagination">
+            <!-- Social profiles -->
+            <meta name="text:Social 500px" content="">
+            <meta name="text:Social Dribbble" content="">
+            <meta name="text:Social Facebook" content="">
+            <meta name="text:Social Flickr" content="">
+            <meta name="text:Social Foursquare" content="">
+            <meta name="text:Social Github" content="">
+            <meta name="text:Social Google Plus" content="">
+            <meta name="text:Social Instagram" content="">
+            <meta name="text:Social Last FM" content="">
+            <meta name="text:Social Linkedin" content="">
+            <meta name="text:Social Email" content="">
+            <meta name="text:Social Medium" content="">
+            <meta name="text:Social Pinterest" content="">
+            <meta name="text:Social Quora" content="">
+            <meta name="text:Social RSS" content="">
+            <meta name="text:Social Skype" content="">
+            <meta name="text:Social Snapchat" content="">
+            <meta name="text:Social Soundcloud" content="">
+            <meta name="text:Social Spotify" content="">
+            <meta name="text:Social Tumblr" content="">
+            <meta name="text:Social Twitter" content="">
+            <meta name="text:Social Vimeo" content="">
+            <meta name="text:Social Website" content="">
+            <meta name="text:Social Weibo" content="">
+            <meta name="text:Social Wordpress" content="">
+            <meta name="text:Social Youtube" content="">
+            <!-- Colors -->
+            <meta name="color:Theme Color Meta Tag" content="#2a2a2a">
+            <meta name="color:Borders" content="#dadada">
+            <meta name="color:Page Background" content="#f5f5f5">
+            <meta name="color:Main Header Emblem" content="#ffffff">
+            <meta name="color:Main Header Text" content="#ffffff">
+            <meta name="color:Main Header Menu Button" content="#ffffff">
+            <meta name="color:Menu Background" content="#101010">
+            <meta name="color:Menu Title" content="#ffffff">
+            <meta name="color:Menu Text" content="#a3a3a3">
+            <meta name="color:Menu Text Hover" content="#ffffff">
+            <meta name="color:Menu Text Close Button" content="#fff">
+            <meta name="color:Post Text" content="#777777">
+            <meta name="color:Post Background" content="#ffffff">
+            <meta name="color:Post Title" content="#2a2a2a">
+            <meta name="color:Post Subtitle" content="#2a2a2a">
+            <meta name="color:Post Content Source" content="#a0a0a0">
+            <meta name="color:Post Link" content="#2a2a2a">
+            <meta name="color:Post Date" content="#a0a0a0">
+            <meta name="color:Post Tags" content="#a0a0a0">
+            <meta name="color:Post Actions Icons" content="#2a2a2a">
+            <meta name="color:Post Notes Link" content="#a0a0a0">
+            <meta name="color:Post Image Link" content="#a0a0a0">
+            <meta name="color:Post Attribution" content="#a0a0a0">
+            <meta name="color:Sidebar Background" content="#282828">
+            <meta name="color:Sidebar Text" content="#ffffff">
+            <meta name="color:Sidebar Icons" content="#ffffff">
+            <meta name="color:Sidebar Authorship Hover" content="#a3a3a3">
+            <meta name="color:Sidebar Section Background" content="#101010">
+            <meta name="color:Sidebar Section Text" content="#a3a3a3">
+            <meta name="color:Sidebar Section Title" content="#ffffff">
+            <meta name="color:Sidebar Section Links" content="#ffffff">
+            <meta name="color:Following Popup Text" content="#2a2a2a">
+            <meta name="color:Following Popup Background" content="#ffffff">
+            <meta name="color:Exif Open Button" content="#ffffff">
+            <meta name="color:Exif Close Button" content="#ffffff">
+            <meta name="color:Exif Background" content="#000000">
+            <meta name="color:Exif Text" content="#ffffff">
+            <meta name="color:Exif List Value" content="#a3a3a3">
+            <meta name="color:Chat Name" content="#2a2a2a">
+            <meta name="color:Share Popup Text" content="#ffffff">
+            <meta name="color:Share Popup Background" content="#282828">
+            <meta name="color:Share Popup Background Hover" content="#101010">
+            <meta name="color:Share Popup Icons" content="#ffffff">
+            <meta name="color:Pagination Links" content="#2a2a2a">
+            <meta name="color:Pagination Loader" content="#2a2a2a">
+            <meta name="color:Search Input Text" content="#ffffff">
+            <meta name="color:Search Input Border" content="#ffffff">
+            <meta name="color:Search Input Icon" content="#ffffff">
+            <meta name="color:Search Input Focus Text" content="#2a2a2a">
+            <meta name="color:Search Input Focus Background" content="#ffffff">
+            <meta name="color:Search Input Focus Icon" content="#2a2a2a">
+            <meta name="color:Permalink Topbar Background" content="#ffffff">
+            <meta name="color:Permalink Topbar Icons" content="#2a2a2a">
+            <meta name="color:Permalink Notes Title" content="#777777">
+            <meta name="color:Permalink Notes Link" content="#2a2a2a">
+            <meta name="color:Permalink Notes Icons" content="#2a2a2a">
+            <meta name="color:Permalink Notes Icons Background" content="#ffffff">
+            <meta name="color:Permalink Popup Loading Text" content="#a3a3a3">
+            <meta name="color:Permalink Popup Loading Link Hover" content="#ffffff">
+            <meta name="color:Search Result Term" content="#2a2a2a">
+            <meta name="color:Tag Page Term" content="#2a2a2a">
+            <meta name="color:Overlay" content="#000000">
+        {/block:Hidden}
+        <link rel="stylesheet" href="https://static.tumblr.com/fs5ieaz/Dynobysi0/global.css">
+        <style>
+            .c-post__title a:hover,
+            .c-post__link__info__title a:hover,
+            .c-post__ask,
+            .c-permalink__notes blockquote,
+            .c-permalink__notes blockquote a,
+            .c-permalink__notes .action a,
+            .c-post__body blockquote,
+            .c-post__body p a,
+            .c-post__body h2 a,
+            .c-post__body blockquote a,
+            .c-post__body li a,
+            .c-post__body hr,
+            .c-post__ask__user__name a,
+            .c-post__collab__name a,
+            .more_notes_link {
+                border-color: {color:Borders};
+            }
+            body {
+                background-color: {color:Page Background};
+                color: {color:Post Text};
+            }
+            body,
+            .c-share {
+                {block:IfNotFontBody}
+                    font-family: "Karla", sans-serif;
+                {/block:IfNotFontBody}
+                {block:IfFontBody}
+                    font-family: {text:Font Body};
+                {/block:IfFontBody}
+            }
+            .o-header,
+            .c-main-header__logo__emblem,
+            .c-main-header__text__title {
+                {block:IfNotFontTitle}
+                    font-family: "Playfair Display", serif;
+                {/block:IfNotFontTitle}
+                {block:IfFontTitle}
+                    font-family: {text:Font Title};
+                {/block:IfFontTitle}
+            }
+            .c-main-header {
+                background-image: radial-gradient(rgba(0, 0, 0, {text:Main Header Dot Pattern Opacity}) 15%, transparent 16%), radial-gradient(rgba(0, 0, 0, {text:Main Header Dot Pattern Opacity}) 15%, transparent 16%), linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url({HeaderImage});
+            }
+            .c-main-header__logo__emblem {
+                color: {color:Main Header Emblem};
+            }
+            .c-main-header__nav__links,
+            .c-main-header__text {
+                color: {color:Main Header Text};
+            }
+            .c-main-header__nav__burger {
+                color: {color:Main Header Menu Button};
+            }
+            .c-menu {
+                background-color: {color:Menu Background};
+            }
+            .c-menu__title {
+                color: {color:Menu Title};
+            }
+            .c-menu__links {
+                color: {color:Menu Text};
+            }
+            .c-menu__links a:hover {
+                color: {color:Menu Text Hover};
+            }
+            .c-menu__close {
+                color: {color:Menu Text Close Button};
+            }
+            .o-frame {
+                background-color: {color:Post Background};
+            }
+            .c-post__title,
+            .c-post__link__info__title {
+                color: {color:Post Title};
+            }
+            .c-post__body h2 {
+                color: {color:Post Subtitle};
+            }
+            .c-post__body__source a {
+                color: {color:Post Content Source} !important;
+            }
+            .c-post__body a,
+            .c-post__ask__user a,
+            .c-post__collab__name a {
+                color: {color:Post Link};
+            }
+            .c-post__footer__date {
+                color: {color:Post Date};
+            }
+            .c-post__footer__tags {
+                color: {color:Post Tags};
+            }
+            .c-post__footer__notes {
+                color: {color:Post Notes Link};
+            }
+            .c-post__photo-link a {
+                color: {color:Post Image Link};
+            }
+            .tmblr-attribution a {
+                color: {color:Post Attribution};
+            }
+            .c-nav-bar {
+                background-color: {color:Sidebar Background};
+                color: {color:Sidebar Text};
+            }
+            .c-nav-bar__links__icon,
+            .c-nav-bar__back-top {
+                color: {color:Sidebar Icons};
+            }
+            @media (min-width: 768px) {
+                .c-nav-bar__back-top:hover {
+                    background-color: {color:Sidebar Section Background} !important;
+                }
+            }
+            .c-nav-bar__credit a:hover {
+                color: {color:Sidebar Authorship Hover};
+            }
+            .c-panel,
+            .c-nav-bar__links__icon.is-active {
+                background-color: {color:Sidebar Section Background};
+            }
+            .c-panel {
+                color: {color:Sidebar Section Text};
+            }
+            .c-panel__title {
+                color: {color:Sidebar Section Title};
+            }
+            .c-panel__tweets a,
+            .c-panel__social-links a,
+            .c-panel__follow-me,
+            .c-panel #likes a {
+                color: {color:Sidebar Section Links};
+            }
+            .c-panel__following__name {
+                color: {color:Following Popup Text};
+                background-color: {color:Following Popup Background};
+            }
+            .c-panel__following__name::before {
+                border-color: {color:Following Popup Background} transparent transparent;
+            }
+            .c-post__photo__exif {
+                color: {color:Exif Open Button};
+            }
+            .c-post__exif-data {
+                background-color: rgba({RGBcolor:Exif Background}, 0.9);
+                color: {color:Exif Text};
+            }
+            .c-post__exif-data__list__value {
+                color: {color:Exif List Value};
+            }
+            .c-post__exif-data__close {
+                color: {color:Exif Close Button};
+            }
+            .c-post__chat__name {
+                color: {color:Chat Name};
+            }
+            .c-share {
+                color: {color:Share Popup Text};
+                background-color: {color:Share Popup Background};
+            }
+            .c-share::after {
+                border-color: {color:Share Popup Background} transparent transparent transparent;
+            }
+            .c-share a:hover {
+                background-color: {color:Share Popup Background Hover};
+            }
+            .c-share__icon {
+                color: {color:Share Popup Icons};
+            }
+            .c-pagination__normal__newer,
+            .c-pagination__normal__older,
+            .c-pagination__load-more__text {
+                color: {color:Pagination Links};
+            }
+            .c-spinner > div {
+                background-color: {color:Pagination Loader};
+            }
+            .c-panel__search__input:focus + .c-panel__search__icon {
+                color: {color:Search Input Focus Icon};
+            }
+            .c-panel__search {
+                color: {color:Search Input Text};
+            }
+            .c-panel__search__input {
+                border-color: {color:Search Input Border};
+            }
+            .c-panel__search__input:focus {
+                background-color: {color:Search Input Focus Background};
+                color: {color:Search Input Focus Text};
+            }
+            .c-panel__search__icon {
+                color: {color:Search Input Icon};
+            }
+            .mfp-options {
+                background-color: {color:Permalink Topbar Background};
+            }
+            .mfp-arrow,
+            .mfp-close {
+                color: {color:Permalink Topbar Icons};
+            }
+            .mfp-preloader {
+                color: {color:Permalink Popup Loading Text};
+            }
+            .mfp-preloader a:hover {
+                color: {color:Permalink Popup Loading Link Hover};
+            }
+            .c-permalink__notes__title {
+                color: {color:Permalink Notes Title};
+            }
+            .c-permalink__notes a {
+                color: {color:Permalink Notes Link};
+            }
+            .reblog .avatar_frame::after,
+            .like .avatar_frame::after {
+                color: {color:Permalink Notes Icons};
+                background-color: {color:Permalink Notes Icons Background};
+            }
+            .c-search-result .search_query {
+                color: {color:Search Result Term};
+            }
+            .c-tag-result .tag {
+                color: {color:Tag Page Term};
+            }
+            .c-menu-overlay,
+            .c-panel-overlay,
+            .mfp-bg {
+                background-color: rgba({RGBcolor:Overlay}, 0.8);
+            }
+            .c-post__footer__actions__share {
+                color: {color:Post Actions Icons};
+            }
+            .c-post__footer__actions svg path {
+                fill: {color:Post Actions Icons};
+            }
+            #disqus_thread a {
+                color:{color:Post Title} !important;
+            }
+            {CustomCSS}
+        </style>
+        {block:IfGoogleAnalyticsID}
+            <script>
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create','{text:Google Analytics ID}');ga('send','pageview');
+            </script>
+        {/block:IfGoogleAnalyticsID}
+    </head>
+    <body>
+        <div class="c-main-header">
+            <div class="c-main-header__wrapper">
+                <nav class="c-main-header__nav">
+                    <div class="js-top-menu-toggle c-main-header__nav__burger icon-burger"></div>
+                    <ul class="c-main-header__nav__links">
+                        {block:IfArchiveLink}
+                            <li><a href="/archive" title="{lang:Archive}">{lang:Archive}</a></li>
+                        {/block:IfArchiveLink}
+                        {block:IfRSSLink}
+                            <li><a href="{RSS}" title="{lang:RSS}">{lang:RSS}</a></li>
+                        {/block:IfRSSLink}
+                        {block:IfRandomLink}
+                            <li><a href="/random" title="{lang:Random}">{lang:Random}</a></li>
+                        {/block:IfRandomLink}
+                        {block:AskEnabled}
+                            <li><a href="/ask" title="{AskLabel}">{AskLabel}</a></li>
+                        {/block:AskEnabled}
+                        {block:SubmissionsEnabled}
+                            <li><a href="/submit" title="{SubmitLabel}">{SubmitLabel}</a></li>
+                        {/block:SubmissionsEnabled}
+                        {block:HasPages}
+                            {block:Pages}
+                                <li><a href="{URL}" title="{Label}">{Label}</a></li>
+                            {/block:Pages}
+                        {/block:HasPages}
+                    </ul>
+                </nav>
+                <div class="c-main-header__logo">
+                    {block:IfShowEmblemInitial}
+                        <a href="/">
+                            <div class="c-main-header__logo__emblem">
+                                <div class="js-emblem-initial c-main-header__logo__emblem__letter"></div>
+                            </div>
+                        </a>
+                    {/block:IfShowEmblemInitial}
+                    {block:IfNotShowEmblemInitial}
+                        {block:ShowAvatar} 
+                            <div class="c-main-header__logo__avatar {AvatarShape}">
+                                <a href="/"><img src="{PortraitURL-96}" alt="{Title}"></a>
+                            </div>
+                        {/block:ShowAvatar} 
+                    {/block:IfNotShowEmblemInitial}
+                </div>
+                <section class="c-main-header__text">
+                    {block:ShowTitle}
+                        <h1 class="js-title c-main-header__text__title"><a href="/">{Title}</a></h1>
+                    {/block:ShowTitle}
+                    {block:ShowDescription}
+                        <h2 class="c-main-header__text__descrip o-parag">{Description}</h2>
+                    {/block:ShowDescription}
+                </section>
+            </div>
+        </div>
+        <div class="c-posts-container">
+            <main class="c-posts-wrapper{block:IndexPage} c-posts-wrapper--masonry{/block:IndexPage}">
+                {block:SearchPage}
+                    <section class="c-search-result o-stamp o-frame">
+                        <h2 class="c-search-result__title">{lang:Search results for SearchQuery 2}</h2>
+                    </section>
+                    {block:NoSearchResults}
+                        <p class="c-search-no-result o-stamp o-frame o-parag">{lang:Sorry no results for SearchQuery}</p>
+                    {/block:NoSearchResults}
+                {/block:SearchPage}
+                {block:TagPage}
+                    <section class="c-tag-result o-stamp o-frame">
+                        <h2 class="c-tag-result__title">{lang:Showing TagResultCount posts tagged Tag 2}</h2>
+                    </section>
+                {/block:TagPage}
+                {block:Posts}
+                    <article class="c-post o-frame{block:Answer} u-mtop-fix{/block:Answer}{block:PermalinkPage} c-post--wider{/block:PermalinkPage}{block:PermalinkPagination} js-post-permalink{/block:PermalinkPagination}" data-popup="{Permalink}">
+                        {block:Text}
+                            {block:Title}
+                                <h1 class="c-post__title o-header">{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}{Title}{block:IndexPage}</a>{/block:IndexPage}</h1>
+                            {/block:Title}
+                            <section class="c-post__body o-parag">{Body}</section>
+                        {/block:Text}
+                        
+                        {block:Quote}
+                            <q class="c-post__title c-post__title--quote o-header">{Quote}</q>
+                            {block:Source}
+                                <section class="c-post__body o-parag">{Source}</section>
+                            {/block:Source}
+                            <section class="c-post__body o-parag">{Body}</section>
+                        {/block:Quote}
+                        
+                        {block:Link}
+                            <section class="c-post__link">
+                                {block:Thumbnail}
+                                    <figure class="c-post__link__thumbnail">
+                                        <a href="{URL}"><img src="{Thumbnail}" alt="{Name}"></a>
+                                    </figure>
+                                {/block:Thumbnail}
+                                <div class="c-post__link__info">
+                                    {block:Host}
+                                        <div class="o-parag">{Host}</div>
+                                    {/block:Host}
+                                    <h1 class="c-post__link__info__title o-header"><a href="{URL}" {Target}>{Name}</a></h1>
+                                    {block:Excerpt}
+                                        <div class="c-post__link__info__excerpt o-parag">{Excerpt}</div>
+                                    {/block:Excerpt}
+                                </div>
+                            </section>
+                            {block:Description}
+                                <section class="c-post__body o-parag">{Description}</section>
+                            {/block:Description}
+                        {/block:Link}
+                        
+                        {block:Chat}
+                            <section class="c-post__chat">
+                                {block:Title}
+                                    <h1 class="c-post__title o-header">{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}{Title}{block:IndexPage}</a>{/block:IndexPage}</h1>
+                                {/block:Title}
+                                <div class="c-post__body o-parag">
+                                    {block:Lines}
+                                        <p>{block:Label}<span class="c-post__chat__name">{Label}</span>{/block:Label} {Line}</p>
+                                    {/block:Lines}
+                                </div>
+                            </section>
+                        {/block:Chat}
+                        
+                        {block:Photo}
+                            <div class="c-post__photo">
+                                {block:IndexPage}
+                                    <a href="{Permalink}">
+                                {/block:IndexPage}
+                                {block:PermalinkPage}
+                                    <a href="{Permalink}" onclick="Tumblr.Lightbox.init([{
+                                        'width'    : '{PhotoWidth-HighRes}',
+                                        'height'   : '{PhotoHeight-HighRes}',
+                                        'low_res'  : '{PhotoURL-HighRes}',
+                                        'high_res' : '{PhotoURL-HighRes}'
+                                    }]); return false;">
+                                {/block:PermalinkPage}
+                                {block:IndexPage}
+                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                {/block:IndexPage}
+                                {block:PermalinkPage}
+                                    <img src="{PhotoURL-HighRes}" data-highres="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                {/block:PermalinkPage}
+                            </a>
+                            {block:IfExifData}
+                                {block:Exif}<div class="js-toggle-exif c-post__photo__exif icon-camera"></div>{/block:Exif}
+                            {/block:IfExifData}
+                            </div>
+                            {block:LinkURL}
+                                <div class="c-post__photo-link">
+                                    <a href="{LinkURL}" title="{LinkURL}" class="u-inline-gap" target="_blank"><span class="c-post__photo-link__icon icon-permalink"></span><span class="c-post__photo-link__url o-small u-ellipsis">{LinkURL}</span></a>
+                                </div>
+                            {/block:LinkURL}
+                            {block:Caption}
+                                <section class="c-post__body o-parag">{Caption}</section>
+                            {/block:Caption}
+                        {/block:Photo}
+                        
+                        {block:Panorama}
+                            <div class="c-post__photo">
+                                {block:IndexPage}
+                                    <a href="{Permalink}">
+                                {/block:IndexPage}
+                                {block:IndexPage}
+                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                {/block:IndexPage}
+                                {block:PermalinkPage}
+                                    {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+                                {/block:PermalinkPage}
+                            </a>
+                            {block:IfExifData}
+                                {block:Exif}<div class="js-toggle-exif c-post__photo__exif icon-camera"></div>{/block:Exif}
+                            {/block:IfExifData}
+                            </div>
+                            {block:LinkURL}
+                                <div class="c-post__photo-link">
+                                    <a href="{LinkURL}" title="{LinkURL}" class="u-inline-gap" target="_blank"><span class="c-post__photo-link__icon icon-permalink"></span><span class="c-post__photo-link__url o-small u-ellipsis">{LinkURL}</span></a>
+                                </div>
+                            {/block:LinkURL}
+                            {block:Caption}
+                                <section class="c-post__body o-parag">{Caption}</section>
+                            {/block:Caption}
+                        {/block:Panorama}
+                        
+                        {block:Photoset}
+                            <div class="c-post__photoset">
+                            <div class="photoset-grid" data-layout="{PhotosetLayout}" data-id="photoset{PostID}" style="visibility: hidden;">
+                                {block:Photos}
+                                    <img src="{PhotoURL-500}"
+                                    data-highres="{PhotoURL-HighRes}"
+                                    data-width="{PhotoWidth-HighRes}"
+                                    data-height="{PhotoHeight-HighRes}"
+                                    width="{PhotoWidth-500}" height="{PhotoHeight-500}"
+                                    {block:Caption}alt="{Caption}"{/block:caption} />
+                                {/block:Photos}
+                            </div>
+                            </div>
+                            {block:Caption}
+                                <section class="c-post__body o-parag">{Caption}</section>
+                            {/block:Caption}
+                        {/block:Photoset}
+                        
+                        {block:Video}
+                            <div class="c-post__video-frame"><div class="c-post__video">{VideoEmbed-700}</div></div>
+                            <section class="c-post__body o-parag">
+                                {block:ContentSource}
+                                    <p class="c-post__body__source o-small"><a href="{SourceURL}">({lang:Source}: {SourceTitle})</a></p>
+                                {/block:ContentSource}
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+                            </section>
+                        {/block:Video}
+                        
+                        {block:Audio}
+                            <div class="c-post__audio-frame"><div class="c-post__audio">{AudioEmbed}</div></div>
+                            <section class="c-post__body o-parag">
+                                {block:ContentSource}
+                                    <p class="c-post__body__source o-small"><a href="{SourceURL}">({lang:Source}: {SourceTitle})</a></p>
+                                {/block:ContentSource}
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+                            </section>
+                        {/block:Audio}
+                        
+                        {block:Answer}
+                            <div class="c-post__ask u-inline-gap">
+                                <div class="c-post__ask__user">
+                                    <div class="c-post__ask__user__avatar"><img src="{AskerPortraitURL-96}" alt="{Asker}"></div>
+                                    <p class="c-post__ask__user__name o-parag">{lang:Asker asked 2}:</p>
+                                </div>
+                                <div class="c-post__ask__question o-parag">{Question}</div>
+                            </div>
+                            <section class="c-post__body o-parag">{Replies}</section>
+                        {/block:Answer}
+                        
+                        {block:IfSubmitter}
+                            {block:Submission}
+                                <div class="c-post__collab u-inline-gap">
+                                    <div class="c-post__collab__avatar"><img src="{SubmitterPortraitURL-64}" alt="{Submitter}"></div>
+                                    <div class="c-post__collab__name o-small">{lang:Posted by PostAuthorName 2}</div>
+                                </div>
+                            {/block:Submission}
+                        {/block:IfSubmitter}
+                        
+                        {block:Date}
+                            <footer class="c-post__footer">
+                                {block:HasTags}
+                                    <ul class="c-post__footer__tags o-small">
+                                        {block:Tags}
+                                            <li><a href="{TagURL}">{Tag}</a></li>
+                                        {/block:Tags}
+                                    </ul>
+                                {/block:HasTags}
+                                <div class="c-post__footer__group u-inline-gap">
+                                    <ul class="c-post__footer__actions">
+                                        {block:IfShareButton}
+                                            <li class="js-show-share c-post__footer__actions__share icon-share">
+                                                <ul class="js-list-share c-share u-inline-gap is-hidden">
+                                                    {block:IfSharePermalink}
+                                                        {block:IndexPage}
+                                                            <li>
+                                                                <a href="{Permalink}">
+                                                                    <span class="c-share__icon icon-permalink"></span>
+                                                                    <span class="c-share__label">Permalink</span>
+                                                                </a>
+                                                            </li>
+                                                        {/block:IndexPage}
+                                                    {/block:IfSharePermalink}
+                                                    {block:IfShareFacebook}
+                                                        <li>
+                                                            <a href="https://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" target="_blank">
+                                                                <span class="c-share__icon icon-facebook"></span>
+                                                                <span class="c-share__label">Facebook</span>
+                                                            </a>
+                                                        </li>
+                                                    {/block:IfShareFacebook}
+                                                    {block:IfShareTwitter}
+                                                        <li>
+                                                            <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" target="_blank">
+                                                                <span class="c-share__icon icon-twitter"></span>
+                                                                <span class="c-share__label">Twitter</span>
+                                                            </a>
+                                                        </li>
+                                                    {/block:IfShareTwitter}
+                                                    {block:IfSharePinterest}
+                                                        <li>
+                                                            <a href="https://pinterest.com/pin/create/button/?url={Permalink}{block:Text}&media={PortraitURL-128}{/block:Text}{block:Photo}&media={PhotoURL-HighRes}{/block:Photo}{block:Panorama}&media={PhotoURL-Panorama}{/block:Panorama}{block:Photoset}{block:Photos}&media={PhotoURL-500}{/block:Photos}{/block:Photoset}{block:Quote}&media={PortraitURL-128}{/block:Quote}{block:Link}&media={PortraitURL-128}{/block:Link}{block:Chat}&media={PortraitURL-128}{/block:Chat}{block:Audio}&media={PortraitURL-128}{/block:Audio}{block:Video}&media={PortraitURL-128}{block:VideoThumbnail}&media={VideoThumbnailURL}{/block:VideoThumbnail}{/block:Video}{block:Answer}&media={PortraitURL-128}{/block:Answer}{block:PostTitle}&description={PostTitle}{/block:PostTitle}" target="_blank">
+                                                                <span class="c-share__icon icon-pinterest"></span>
+                                                                <span class="c-share__label">Pinterest</span>
+                                                            </a>
+                                                        </li>
+                                                    {/block:IfSharePinterest}
+                                                    {block:IfShareGooglePlus}
+                                                        <li>
+                                                            <a href="https://plus.google.com/share?url={Permalink}" target="_blank">
+                                                                <span class="c-share__icon icon-google"></span>
+                                                                <span class="c-share__label">Google +</span>
+                                                            </a>
+                                                        </li>
+                                                    {/block:IfShareGooglePlus}
+                                                </ul>
+                                            </li>
+                                        {/block:IfShareButton}
+                                        <li class="c-post__footer__actions__reblog">{ReblogButton size="16"}</li>
+                                        <li class="c-post__footer__actions__like">
+                                            <svg width="16" height="16" viewBox="0 0 19 16" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" fill="#000000">
+                                                <path d="M14.0425097,0.000920262799 C16.1435097,-0.0400797372 18.8835097,1.28192026 18.9635097,5.36992026 C19.0525097,9.95492026 15.1985097,13.3079203 9.48350967,16.2089203 C3.76650967,13.3079203 -0.0874903349,9.95492026 0.00150966509,5.36992026 C0.0815096651,1.28192026 2.82150967,-0.0400797372 4.92250967,0.000920262799 C7.02450967,0.0419202628 8.87050967,2.26592026 9.46950967,2.92792026 C10.0945097,2.26592026 11.9405097,0.0419202628 14.0425097,0.000920262799 Z"></path>
+                                            </svg>
+                                            {LikeButton size="16"}
+                                        </li>
+                                    </ul>
+                                    <time class="c-post__footer__date o-small" datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">
+                                        {block:IndexPage}<a href="{Permalink}">{/block:IndexPage}<b><div style="text-transform:uppercase;">{DayofMonth} {ShortMonth}, {Year}</div></b>{block:IndexPage}</a>{/block:IndexPage}
+                                    </time>
+                                    {block:NoteCount}
+                                    <div class="c-post__footer__notes o-small">
+                                        {block:IndexPage}<a href="{Permalink}">{/block:IndexPage}{NoteCountWithLabel}{block:IndexPage}</a>{/block:IndexPage}
+                                    </div>
+                                    {/block:NoteCount}
+                                </div>
+                            </footer>
+                        {/block:Date}
+                        {block:PermalinkPagination}
+                            {block:IfDisqusShortname}
+                                <section class="c-permalink__disqus">
+                                    <div id="disqus_thread"></div>
+                                    <script type="text/javascript">
+                                        (function() {
+                                            var dsq = document.createElement('script');
+                                            dsq.type = 'text/javascript';
+                                            dsq.async = true;
+                                            dsq.src = 'https://{text:Disqus Shortname}.disqus.com/embed.js';
+                                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                        })();
+                                    </script>
+                                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
+                                    <a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+                                </section>
+                            {/block:IfDisqusShortname}
+                            {block:PostNotes}
+                                <section class="c-permalink__notes">
+                                    <p class="c-permalink__notes__title">{NoteCountWithLabel}</p>
+                                    {PostNotes-64}
+                                </section>
+                            {/block:PostNotes}
+                        {/block:PermalinkPagination}
+                        {block:Photo}
+                            {block:IfExifData}
+                                {block:Exif}
+                                    <div class="js-list-exif c-post__exif-data is-hidden">
+                                        <div class="js-wrapper-exif c-post__exif-data__wrapper">
+                                            <p class="c-post__exif-data__title">Exif data</p>
+                                            <ul class="c-post__exif-data__list o-parag">
+                                                {block:Camera}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Camera</div>
+                                                        <div class="c-post__exif-data__list__value">{Camera}</div>
+                                                    </li>
+                                                {/block:Camera}
+                                                {block:ISO}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">ISO</div>
+                                                        <div class="c-post__exif-data__list__value">{ISO}</div>
+                                                    </li>
+                                                {/block:ISO}
+                                                {block:Aperture}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Aperture</div>
+                                                        <div class="c-post__exif-data__list__value">{Aperture}</div>
+                                                    </li>
+                                                {/block:Aperture}
+                                                {block:Exposure}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Exposure</div>
+                                                        <div class="c-post__exif-data__list__value">{Exposure}</div>
+                                                    </li>
+                                                {/block:Exposure}
+                                                {block:FocalLength}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Focal length</div>
+                                                        <div class="c-post__exif-data__list__value">{FocalLength}</div>
+                                                    </li>
+                                                {/block:FocalLength}
+                                            </ul>
+                                            <div class="js-toggle-exif c-post__exif-data__close icon-close"></div>
+                                        </div>
+                                    </div>
+                                {/block:Exif}
+                            {/block:IfExifData}
+                        {/block:Photo}
+                        {block:Panorama}
+                            {block:IfExifData}
+                                {block:Exif}
+                                    <div class="js-list-exif c-post__exif-data is-hidden">
+                                        <div class="js-wrapper-exif c-post__exif-data__wrapper">
+                                            <p class="c-post__exif-data__title">Exif data</p>
+                                            <ul class="c-post__exif-data__list o-parag">
+                                                {block:Camera}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Camera</div>
+                                                        <div class="c-post__exif-data__list__value">{Camera}</div>
+                                                    </li>
+                                                {/block:Camera}
+                                                {block:ISO}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">ISO</div>
+                                                        <div class="c-post__exif-data__list__value">{ISO}</div>
+                                                    </li>
+                                                {/block:ISO}
+                                                {block:Aperture}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Aperture</div>
+                                                        <div class="c-post__exif-data__list__value">{Aperture}</div>
+                                                    </li>
+                                                {/block:Aperture}
+                                                {block:Exposure}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Exposure</div>
+                                                        <div class="c-post__exif-data__list__value">{Exposure}</div>
+                                                    </li>
+                                                {/block:Exposure}
+                                                {block:FocalLength}
+                                                    <li>
+                                                        <div class="c-post__exif-data__list__label">Focal length</div>
+                                                        <div class="c-post__exif-data__list__value">{FocalLength}</div>
+                                                    </li>
+                                                {/block:FocalLength}
+                                            </ul>
+                                            <div class="js-toggle-exif c-post__exif-data__close icon-close"></div>
+                                        </div>
+                                    </div>
+                                {/block:Exif}
+                            {/block:IfExifData}
+                        {/block:Panorama}
+                    </article>
+                {/block:Posts}
+            </main>
+        </div>
+        
+        <div class="js-panel-overlay c-panel-overlay is-hidden"></div>
+        
+        <div class="js-panel-search c-panel is-hidden">
+            <div class="c-panel__wrapper">
+                <h2 class="c-panel__title o-header">{lang:Search}</h2>
+                <form action="/search" method="get" class="c-panel__search">
+                    <input type="text" name="q" value="{SearchQuery}" class="c-panel__search__input" placeholder="{lang:Search}...">
+                    <input type="submit" class="c-panel__search__icon" value="n">
+                </form>
+            </div>
+        </div>
+        
+        {block:IfLatestTweets}
+            {block:Twitter}
+            <section class="js-panel-twitter c-panel is-hidden">
+                <div class="c-panel__wrapper">
+                    <h2 class="c-panel__title o-header">{lang:Latest Tweets}</h2>
+                    <div id="twitter" style="display:none;">
+                        <ul id="tweets" class="c-panel__tweets o-parag"></ul>
+                        <a href="https://twitter.com/{TwitterUsername}" target="_blank" class="c-panel__follow-me">{lang:Follow on Twitter}</a>
+                    </div>
+                </div>
+            </section>
+            {/block:Twitter}
+        {/block:IfLatestTweets}
+        
+        <div class="js-panel-photos c-panel is-hidden">
+            <div class="c-panel__wrapper">
+                {block:IfInstagramToken}
+                    <section class="js-instagram c-panel__group">
+                        <h2 class="c-panel__title o-header">Instagram {lang:Feed}</h2>
+                    </section>
+                {/block:IfInstagramToken}
+                {block:IfFlickrID}
+                    <section class="js-flickr c-panel__group">
+                        <h2 class="c-panel__title o-header">Lastest Photos</h2>
+                    </section>
+                {/block:IfFlickrID}
+            </div>
+        </div>
+        
+        <div class="js-panel-user c-panel is-hidden">
+            <div class="c-panel__wrapper">
+                <section class="c-panel__group">
+                    <h2 class="c-panel__title o-header">{lang:About me}</h2>
+                    {block:IfAboutMe}<p class="c-panel__about o-parag">{text:About me}</p>{/block:IfAboutMe}
+                    <ul class="c-panel__social-links">
+                        {block:IfSocial500px}
+                            <li><a class="icon-500px" href="{text:Social 500px}" title="500px" target="_blank"></a></li>
+                        {/block:IfSocial500px}
+                        {block:IfSocialDribbble}
+                            <li><a class="icon-dribbble" href="{text:Social Dribbble}" title="Dribbble" target="_blank"></a></li>
+                        {/block:IfSocialDribbble}
+                        {block:IfSocialFacebook}
+                            <li><a class="icon-facebook" href="{text:Social Facebook}" title="Facebook" target="_blank"></a></li>
+                        {/block:IfSocialFacebook}
+                        {block:IfSocialFlickr}
+                            <li><a class="icon-flickr" href="{text:Social Flickr}" title="Flickr" target="_blank"></a></li>
+                        {/block:IfSocialFlickr}
+                        {block:IfSocialFoursquare}
+                            <li><a class="icon-foursquare" href="{text:Social Foursquare}" title="Foursquare" target="_blank"></a></li>
+                        {/block:IfSocialFoursquare}
+                        {block:IfSocialGithub}
+                            <li><a class="icon-github" href="{text:Social Github}" title="Github" target="_blank"></a></li>
+                        {/block:IfSocialGithub}
+                        {block:IfSocialGooglePlus}
+                            <li><a class="icon-google" href="{text:Social Google Plus}" title="Google Plus" target="_blank"></a></li>
+                        {/block:IfSocialGooglePlus}
+                        {block:IfSocialInstagram}
+                            <li><a class="icon-instagram" href="{text:Social Instagram}" title="Instagram" target="_blank"></a></li>
+                        {/block:IfSocialInstagram}
+                        {block:IfSocialLastFM}
+                            <li><a class="icon-lastfm" href="{text:Social Last FM}" title="Last FM" target="_blank"></a></li>
+                        {/block:IfSocialLastFM}
+                        {block:IfSocialLinkedin}
+                            <li><a class="icon-linkedin" href="{text:Social Linkedin}" title="Linkedin" target="_blank"></a></li>
+                        {/block:IfSocialLinkedin}
+                        {block:IfSocialEmail}
+                            <li><a class="icon-email" href="mailto:{text:Social Email}" title="Email"></a></li>
+                        {/block:IfSocialEmail}
+                        {block:IfSocialMedium}
+                            <li><a class="icon-medium" href="{text:Social Medium}" title="Medium" target="_blank"></a></li>
+                        {/block:IfSocialMedium}
+                        {block:IfSocialPinterest}
+                            <li><a class="icon-pinterest" href="{text:Social Pinterest}" title="Pinterest" target="_blank"></a></li>
+                        {/block:IfSocialPinterest}
+                        {block:IfSocialQuora}
+                            <li><a class="icon-quora" href="{text:Social Quora}" title="Quora" target="_blank"></a></li>
+                        {/block:IfSocialQuora}
+                        {block:IfSocialRSS}
+                            <li><a class="icon-rss" href="{text:Social RSS}" title="RSS" target="_blank"></a></li>
+                        {/block:IfSocialRSS}
+                        {block:IfSocialSkype}
+                            <li><a class="icon-skype" href="{text:Social Skype}" title="Skype" target="_blank"></a></li>
+                        {/block:IfSocialSkype}
+                        {block:IfSocialSnapchat}
+                            <li><a class="icon-snapchat" href="{text:Social Snapchat}" title="Snapchat" target="_blank"></a></li>
+                        {/block:IfSocialSnapchat}
+                        {block:IfSocialSoundcloud}
+                            <li><a class="icon-soundcloud" href="{text:Social Soundcloud}" title="Soundcloud" target="_blank"></a></li>
+                        {/block:IfSocialSoundcloud}
+                        {block:IfSocialSpotify}
+                            <li><a class="icon-spotify" href="{text:Social Spotify}" title="Spotify" target="_blank"></a></li>
+                        {/block:IfSocialSpotify}
+                        {block:IfSocialTumblr}
+                            <li><a class="icon-tumblr" href="{text:Social Tumblr}" title="Tumblr" target="_blank"></a></li>
+                        {/block:IfSocialTumblr}
+                        {block:IfSocialTwitter}
+                            <li><a class="icon-twitter" href="{text:Social Twitter}" title="Twitter" target="_blank"></a></li>
+                        {/block:IfSocialTwitter}
+                        {block:IfSocialVimeo}
+                            <li><a class="icon-vimeo" href="{text:Social Vimeo}" title="Vimeo" target="_blank"></a></li>
+                        {/block:IfSocialVimeo}
+                        {block:IfSocialWebsite}
+                            <li><a class="icon-website" href="{text:Social Website}" title="Website" target="_blank"></a></li>
+                        {/block:IfSocialWebsite}
+                        {block:IfSocialWeibo}
+                            <li><a class="icon-weibo" href="{text:Social Weibo}" title="Weibo" target="_blank"></a></li>
+                        {/block:IfSocialWeibo}
+                        {block:IfSocialWordpress}
+                            <li><a class="icon-wordpress" href="{text:Social Wordpress}" title="Wordpress" target="_blank"></a></li>
+                        {/block:IfSocialWordpress}
+                        {block:IfSocialYoutube}
+                            <li><a class="icon-youtube" href="{text:Social Youtube}" title="Youtube" target="_blank"></a></li>
+                        {/block:IfSocialYoutube}
+                    </ul>
+                </section>
+                {block:IfFollowing}
+                    {block:Following}
+                        <section class="c-panel__group">
+                            <h2 class="c-panel__title o-header">{lang:Following}</h2>
+                            <ul class="c-panel__following u-fill-width u-inline-gap">
+                                {block:Followed}
+                                    <li>
+                                        <a href="{FollowedURL}"><img src="{FollowedPortraitURL-128}" alt="{FollowedTitle}"></a>
+                                        <div class="c-panel__following__name">
+                                            <p class="u-ellipsis">{FollowedTitle}</p>
+                                        </div>
+                                    </li>
+                                {/block:Followed}
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                                <li class="gap"></li>
+                            </ul>
+                        </section>
+                    {/block:Following}
+                {/block:IfFollowing}
+                {block:IfLikes}
+                    {block:Likes}
+                        <section class="c-panel__group">
+                            <h2 class="c-panel__title o-header">{lang:Stuff I like}</h2>
+                            {Likes limit="4" summarize="250"}
+                            <a href="https://www.tumblr.com/liked/by/{Name}" class="c-panel__follow-me">{lang:See more}</a>
+                        </section>
+                    {/block:Likes}
+                {/block:IfLikes}
+            </div>
+        </div>
+        
+        <div class="js-top-menu-overlay c-menu-overlay is-hidden">
+            <div class="js-top-menu c-menu is-hidden">
+                <div class="c-menu__container">
+                    <nav class="c-menu__wrapper">
+                        <h2 class="c-menu__title o-header">Menu</h2>
+                        <ul class="c-menu__links">
+                            {block:IfArchiveLink}
+                                <li><a href="/archive" title="{lang:Archive}">{lang:Archive}</a></li>
+                            {/block:IfArchiveLink}
+                            {block:IfRSSLink}
+                                <li><a href="{RSS}" title="{lang:RSS}">{lang:RSS}</a></li>
+                            {/block:IfRSSLink}
+                            {block:IfRandomLink}
+                                <li><a href="/random" title="{lang:Random}">{lang:Random}</a></li>
+                            {/block:IfRandomLink}
+                            {block:AskEnabled}
+                                <li><a href="/ask" title="{AskLabel}">{AskLabel}</a></li>
+                            {/block:AskEnabled}
+                            {block:SubmissionsEnabled}
+                                <li><a href="/submit" title="{SubmitLabel}">{SubmitLabel}</a></li>
+                            {/block:SubmissionsEnabled}
+                            {block:HasPages}
+                                {block:Pages}
+                                    <li><a href="{URL}" title="{Label}">{Label}</a></li>
+                                {/block:Pages}
+                            {/block:HasPages}
+                        </ul>
+                    </nav>
+                    <div class="js-top-menu-toggle c-menu__close icon-close"></div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="js-bottom-bar c-nav-bar">
+            <div class="c-nav-bar__wrapper">
+                <div class="c-nav-bar__bottom">
+                    <p class="c-nav-bar__credit"><a>© {CopyrightYears}</a></p>
+                    <a href="#" class="js-back-top c-nav-bar__back-top icon-back-top"></a>
+                </div>
+                <ul class="js-items-bar c-nav-bar__links u-inline-gap">
+                    <li class="js-item-search c-nav-bar__links__icon icon-search"></li>
+                    <li class="js-item-user c-nav-bar__links__icon icon-user"></li>
+                    {block:IfLatestTweets}
+                        {block:Twitter}
+                            <li class="js-item-twitter c-nav-bar__links__icon icon-twitter"></li>
+                        {/block:Twitter}
+                    {/block:IfLatestTweets}
+                    <li class="js-item-photos c-nav-bar__links__icon icon-photo"></li>
+                </ul>
+            </div>
+        </nav>
+        
+        {block:Pagination}
+            <nav class="c-pagination c-pagination--masonry {select:Pagination Style}">
+                <div class="c-pagination__normal u-clearfix">
+                    {block:PreviousPage}
+                        <a href="{PreviousPage}" class="c-pagination__normal__newer">{lang:Newer}</a>
+                    {/block:PreviousPage}
+                    {block:NextPage}
+                        <a href="{NextPage}" class="c-pagination__normal__older">{lang:Older}</a>
+                    {/block:NextPage}
+                </div>
+                <div class="c-pagination__load-more">
+                    <p class="c-pagination__load-more__text">{lang:Load more posts}</p>
+                </div>
+            </nav>
+        {/block:Pagination}
+        {block:PermalinkPagination}
+            <nav class="c-pagination">
+                <div class="c-pagination__normal u-clearfix">
+                    {block:PreviousPost}
+                        <a href="{PreviousPost}" class="c-pagination__normal__newer">{lang:Newer}</a>
+                    {/block:PreviousPost}
+                    {block:NextPost}
+                        <a href="{NextPost}" class="c-pagination__normal__older">{lang:Older}</a>
+                    {/block:NextPost}
+                </div>
+            </nav>
+        {/block:PermalinkPagination}
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://static.tumblr.com/fs5ieaz/AbXobysjm/production.min.js"></script>
+        <script>
+            var endPostsMssg = "{text:Finished Posts Message}";
+            var loadingPopupMssg = "{lang:Loading}...";
+            {block:IfPermalinkPopup}
+                permalinkPopup.init();
+            {/block:IfPermalinkPopup}
+            {block:IfLatestTweets}
+                {block:Twitter}
+                    function recent_tweets(data) {
+                        var maxTweets;
+                        if(isInt('{text:Tweets Limit}')) {
+                            maxTweets = {text:Tweets Limit}
+                        }
+                        else {
+                            maxTweets = 4;
+                        }
+                        for (i=0; i < maxTweets; i++) {
+                                document.getElementById("tweets").innerHTML =
+                                document.getElementById("tweets").innerHTML +
+                                '<li>' + twttr.txt.autoLink( data[i].text ) + '</li>';
+                            }
+                        document.getElementById("twitter").style.display = 'block';
+                    }
+                {/block:Twitter}
+            {/block:IfLatestTweets}
+            {block:IfInstagramToken}
+                feed.getImgs('instagram', '{text:Instagram Token}', true, '{text:Follow Instagram Message}', {text:Instagram Photos Limit});
+            {/block:IfInstagramToken}
+            {block:IfFlickrID}
+                feed.getImgs('flickr', '{text:Flickr ID}', true, '{text:Follow Flickr Message}', {text:Flickr Photos Limit});
+            {/block:IfFlickrID}
+            {block:IfShowEmblemInitial}
+                setEmblem.init();
+            {/block:IfShowEmblemInitial}
+            pagesNavigation.init();
+            {block:IfExifData}
+                exifData.init();
+            {/block:IfExifData}
+            {block:IfShareButton}
+                sharePopup.init();
+            {/block:IfShareButton}
+        </script>
+        {block:IfLatestTweets}
+            {block:Twitter}
+                <script type="text/javascript" src="/tweets.js"></script>
+            {/block:Twitter}
+        {/block:IfLatestTweets}
+    </body>
+</html>
